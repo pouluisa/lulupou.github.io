@@ -1,0 +1,118 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Luisa Pou</title>
+  
+  <style>
+    #slides {
+      display: none;
+    }
+  </style>
+  
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="source/jquery.slides.min.js"></script>
+  
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 840,
+        height: 660
+      });
+    });
+    
+    $(function(){
+      $("#slides").slidesjs({
+        navigation: {
+          active: true,
+            // [boolean] Generates next and previous buttons.
+            // You can set to false and use your own buttons.
+            // User defined buttons must have the following:
+            // previous button: class="slidesjs-previous slidesjs-navigation"
+            // next button: class="slidesjs-next slidesjs-navigation"
+          effect: "slide"
+            // [string] Can be either "slide" or "fade".
+        }
+      });
+    });
+    $(function(){
+      $("#slides").slidesjs({
+        pagination: {
+          active: true,
+            // [boolean] Create pagination items.
+            // You cannot use your own pagination. Sorry.
+          effect: "slide"
+            // [string] Can be either "slide" or "fade".
+        }
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+
+<div id="wrapper"> <!-- container for page content -->
+  
+  <div id="content">
+  <div id="left-column">
+    <header>
+      <img class="logo" src="img/lulu_logo.png" alt="Luisa Pou Logo" />
+    </header>
+    
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="resume.html">Resum&#233;</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <div id="right-column">
+    <div id="slide-container">
+      <div id="slides">
+        <img src="img/campaigns/houseofleaves/lulubook10.png">
+        <img src="img/campaigns/houseofleaves/lulubook11.png">
+        <img src="img/campaigns/houseofleaves/lulubook12.png">
+        <img src="img/campaigns/houseofleaves/lulubook13.png">
+        <img src="img/campaigns/houseofleaves/lulubook14.png">
+        <img src="img/campaigns/houseofleaves/lulubook15.png">
+        <img src="img/campaigns/houseofleaves/lulubook16.png">
+        <img src="img/campaigns/houseofleaves/lulubook17.png">
+      </div>
+    </div>
+  </div> <!-- end "right-column" -->
+  
+  </div><!-- end content -->
+  
+  <footer>
+    <div class="footer-container">
+      <center>
+        <a href="http://www.linkedin.com/in/luisapou">
+          <img class="social-media" src="img/linkedin-icon.png" alt="LinkedIn Profile" />
+        </a>
+        <p class="footer"><span>&#169; 2015 Luisa Pou</span></p>
+      </center>
+    </div>
+  </footer>
+
+</div> <!-- end "wrapper" -->
+
+
+</body>
+
+</html>
